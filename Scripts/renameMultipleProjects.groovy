@@ -3,11 +3,12 @@ import com.atlassian.jira.project.UpdateProjectParameters
 import org.apache.log4j.Level
 import org.apache.log4j.Logger
 
-// Importing your csv file
+// Create a csv file
 // First column: old project name
 // Second column: new project name
+// Upload it to your server and add path as per your installation
 
-File file = new File("/opt/jira/home/scripts/file.csv") 
+File file = new File("C:/Program Files/Atlassian/Application Data/JIRA/scripts/rename.csv")
 
 
 def log = Logger.getLogger("dev.rawat")
